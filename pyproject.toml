@@ -6,7 +6,7 @@ authors = ["Jericho <perilecho@gmail.com>"]
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
+python = "^3.10"
 llama-index = "^0.10.28"
 pypdf = "^4.2.0"
 llama-index-llms-huggingface = "^0.1.4"
