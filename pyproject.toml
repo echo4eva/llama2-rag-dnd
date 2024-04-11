@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "dndpdf"
+version = "0.1.0"
+description = ""
+authors = ["Jericho <perilecho@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+llama-index = "^0.10.28"
+pypdf = "^4.2.0"
+llama-index-llms-huggingface = "^0.1.4"
+llama-index-embeddings-huggingface = "^0.2.0"
+accelerate = "^0.29.2"
+bitsandbytes = "^0.43.0"
+torch = {version = "^2.0.1+cu118", source = "torch118"}
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.4"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "torch118"
+url = "https://download.pytorch.org/whl/cu118"
+priority = "explicit"
